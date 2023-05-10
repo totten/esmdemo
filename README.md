@@ -1,54 +1,17 @@
 # esmdemo
 
-![Screenshot](/images/screenshot.png)
+This extension has some simple examples of using ECMAScript Modules in CiviCRM.
 
-(*FIXME: In one or two paragraphs, describe what the extension does and why one would download it. *)
+## RelPath (`civicrm/esmdemo/relpath`)
 
-The extension is licensed under [AGPL-3.0](LICENSE.txt).
+1. This [page-controller](CRM/Esmdemo/Page/RelPath.php) loads the file [hello-world.js](js/hello-world-.js).
+2. [hello-world.js](js/hello-world-.js) imports [importotron.js](js/importotron.js). Note the use of a relative file-path.
+   This is a dummy widget.
+3. When you open the page, you will see a "Hello world" message rendered with support from the helper.
 
-## Requirements
+<!--
+## ImportMap (`civicrm/esmdemo/importmap`)
 
-* PHP v7.4+
-* CiviCRM (*FIXME: Version number*)
-
-## Installation (Web UI)
-
-Learn more about installing CiviCRM extensions in the [CiviCRM Sysadmin Guide](https://docs.civicrm.org/sysadmin/en/latest/customize/extensions/).
-
-## Installation (CLI, Zip)
-
-Sysadmins and developers may download the `.zip` file for this extension and
-install it with the command-line tool [cv](https://github.com/civicrm/cv).
-
-```bash
-cd <extension-dir>
-cv dl esmdemo@https://github.com/FIXME/esmdemo/archive/master.zip
-```
-or
-```bash
-cd <extension-dir>
-cv dl esmdemo@https://lab.civicrm.org/extensions/esmdemo/-/archive/main/esmdemo-main.zip
-```
-
-## Installation (CLI, Git)
-
-Sysadmins and developers may clone the [Git](https://en.wikipedia.org/wiki/Git) repo for this extension and
-install it with the command-line tool [cv](https://github.com/civicrm/cv).
-
-```bash
-git clone https://github.com/FIXME/esmdemo.git
-cv en esmdemo
-```
-or
-```bash
-git clone https://lab.civicrm.org/extensions/esmdemo.git
-cv en esmdemo
-```
-
-## Getting Started
-
-(* FIXME: Where would a new user navigate to get started? What changes would they see? *)
-
-## Known Issues
-
-(* FIXME *)
+1. This page loads an import-map, where the logical path `esmdemo/*` corresponds to the folder `./js` in this extension.
+2. This page adds some dynamic ESM code which uses `import` to load from the logical path `esmdemo/*`.
+-->
