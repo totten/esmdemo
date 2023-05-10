@@ -6,7 +6,7 @@ This extension has some simple examples of using ECMAScript Modules in CiviCRM.
 
 In these examples, we load one ES module -- and it recursively loads another ES module.
 
-The _basic_ examples only work with *physical paths*. Physical paths in a few scenarios:
+The _basic_ examples only work with *physical paths*. Physical paths are useful in a few scenarios:
 
 * The dependencies are physically stored in the same folder. (In this case, use a relative path like `./my-other-module.js`.)
 * The dependencies are distributed via CDN. (In this case, use an absolute URL like `https://unpkg.com/foo/my-other-module.js`.)
@@ -17,7 +17,7 @@ For this, we need "_Part 2. Import Map Support_".
 ### Hello World: Relative Path (`civicrm/esmdemo/hello-relpath`)
 
 1. This [page-controller](CRM/Esmdemo/Page/RelPath.php) loads the file [hello-relpath.js](js/hello-relpath.js).
-2. [hello-relpath.js](js/hello-relpath.js) imports [display-o-tron.js](js/display-o-tron.js). Note the use of a relative file-path.
+2. [hello-relpath.js](js/hello-relpath.js) imports [./display-o-tron.js](js/display-o-tron.js). Note the use of a relative file-path.
    This is a dummy widget.
 3. When you open the page, you will see a "Hello world" message rendered with support from the helper.
 
@@ -27,11 +27,11 @@ For this, we need "_Part 2. Import Map Support_".
 2. [hello-vuejs-cdn.js](js/hello-vuejs-cdn.js) imports VueJS from CDN.
 3. When you open the page, you will see a "Hello world" message rendered by VueJS.
 
-### Hello World: VueJS CDN (`civicrm/esmdemo/hello-vuejs-cdn`)
+### Hello World: ReactJS CDN (`civicrm/esmdemo/hello-reactjs-cdn`)
 
-1. This [page-controller](CRM/Esmdemo/Page/VueJSCDN.php) loads the [HTML template](templates/CRM/Esmdemo/Page/VueJS.tpl) and the module [hello-vuejs-cdn.js](js/hello-vuejs-cdn.js).
-2. [hello-vuejs-cdn.js](js/hello-vuejs-cdn.js) imports VueJS from CDN.
-3. When you open the page, you will see a "Hello world" message rendered by VueJS.
+1. This [page-controller](CRM/Esmdemo/Page/ReactJSCDN.php) loads the [HTML template](templates/CRM/Esmdemo/Page/ReactJS.tpl) and the module [hello-reactjs-cdn.js](js/hello-reactjs-cdn.js).
+2. [hello-reactjs-cdn.js](js/hello-reactjs-cdn.js) imports ReactJS from CDN.
+3. When you open the page, you will see a "Hello world" message rendered by ReactJS.
 
 ## Part 2. Import Map Support
 
