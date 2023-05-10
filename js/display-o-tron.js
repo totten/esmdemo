@@ -3,7 +3,7 @@
  *
  * @param markup string
  */
-export default function importotron(markup) {
+export default function displayotron(markup) {
   const container = document.getElementById('crm-container');
   const newElement = document.createElement('div');
   newElement.innerHTML = markup;

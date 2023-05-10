@@ -2,10 +2,10 @@
 
 This extension has some simple examples of using ECMAScript Modules in CiviCRM.
 
-## RelPath (`civicrm/esmdemo/relpath`)
+## RelPath (`civicrm/esmdemo/hello-relpath`)
 
-1. This [page-controller](CRM/Esmdemo/Page/RelPath.php) loads the file [hello-world.js](js/hello-world.js).
-2. [hello-world.js](js/hello-world.js) imports [importotron.js](js/importotron.js). Note the use of a relative file-path.
+1. This [page-controller](CRM/Esmdemo/Page/RelPath.php) loads the file [hello-relpath.js](js/hello-relpath.js).
+2. [hello-relpath.js](js/hello-relpath.js) imports [display-o-tron.js](js/display-o-tron.js). Note the use of a relative file-path.
    This is a dummy widget.
 3. When you open the page, you will see a "Hello world" message rendered with support from the helper.
 

@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <menu>
   <item>
-    <path>civicrm/esmdemo/relpath</path>
+    <path>civicrm/esmdemo/hello-relpath</path>
     <page_callback>CRM_Esmdemo_Page_RelPath</page_callback>
     <title>RelPath</title>
     <access_arguments>access CiviCRM</access_arguments>
