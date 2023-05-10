@@ -6,4 +6,10 @@
     <title>RelPath</title>
     <access_arguments>access CiviCRM</access_arguments>
   </item>
+  <item>
+    <path>civicrm/esmdemo/hello-vuejs-cdn</path>
+    <page_callback>CRM_Esmdemo_Page_VueJSCDN</page_callback>
+    <title>VueJS</title>
+    <access_arguments>access CiviCRM</access_arguments>
+  </item>
 </menu>
