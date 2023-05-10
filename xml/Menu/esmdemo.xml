@@ -12,4 +12,10 @@
     <title>VueJS</title>
     <access_arguments>access CiviCRM</access_arguments>
   </item>
+  <item>
+    <path>civicrm/esmdemo/hello-reactjs-cdn</path>
+    <page_callback>CRM_Esmdemo_Page_ReactJSCDN</page_callback>
+    <title>ReactJSCDN</title>
+    <access_arguments>access CiviCRM</access_arguments>
+  </item>
 </menu>
