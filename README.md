@@ -30,7 +30,7 @@ This limits you to scenarios where the physical path is easy to identify, such a
 We have a few examples of these techniques.
 
 * __Hello World: Relative Path__ (`civicrm/esmdemo/hello-relpath`)
-    * This [page-controller](CRM/Esmdemo/Page/RelPath.php) loads the first file:
+    * The [page-controller](CRM/Esmdemo/Page/RelPath.php) loads the first file:
         ```php
         Civi::resources()->addModuleFile(E::LONG_NAME, 'js/hello-relpath.js');
         ```
@@ -39,7 +39,7 @@ We have a few examples of these techniques.
         import displayotron from './display-o-tron.js';
         ```
 * __Hello World: VueJS CDN__ (`civicrm/esmdemo/hello-vuejs-cdn`)
-    * This [page-controller](CRM/Esmdemo/Page/VueJSCDN.php) loads the first file and some static HTML.
+    * The [page-controller](CRM/Esmdemo/Page/VueJSCDN.php) loads the first file and some static HTML.
         ```php
         Civi::resources()->addModuleFile(E::LONG_NAME, 'js/hello-vuejs-cdn.js');
         CRM_Core_Region::instance('page-body')->addMarkup('<div id="app"><h2>{{ message }}</h2></div>');
@@ -49,7 +49,7 @@ We have a few examples of these techniques.
         import { createApp } from 'https://unpkg.com/vue@3/dist/vue.esm-browser.js'
         ```
 * __Hello World: ReactJS CDN__ (`civicrm/esmdemo/hello-reactjs-cdn`)
-    * This [page-controller](CRM/Esmdemo/Page/ReactJSCDN.php) loads the first file and some static HTML.
+    * The [page-controller](CRM/Esmdemo/Page/ReactJSCDN.php) loads the first file and some static HTML.
         ```php
         Civi::resources()->addModuleFile(E::LONG_NAME, 'js/hello-reactjs-cdn.js');
         CRM_Core_Region::instance('page-body')->addMarkup('<div id="root"></div>');
