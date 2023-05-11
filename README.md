@@ -20,11 +20,11 @@ This limits you to scenarios where the physical path is easy to identify, such a
 
 * Importing dependencies from the same folder.
     ```js
-    import ... from './my-other-module.js'
+    import { myOtherStuff } from './my-other-module.js'
     ```
 * Importing dependencies from a specific CDN.
     ```js
-    import ... from 'https://unpkg.com/foo/my-other-module.js'
+    import { myOtherStuff } from 'https://unpkg.com/foo/my-other-module.js'
     ```
 
 We have a few examples of these techniques.
