@@ -2,6 +2,8 @@
 
 This is a CiviCRM extension with some simple examples of loading ECMAScript Modules (ESMs).
 
+To view the demos, install the extension and navigate to `civicrm/esmdemo`.
+
 ## Part 1. Basic ESM Support
 
 Basic ESM support allows you to load an ESM file. This resembles the [traditional loading of Javascript files](https://docs.civicrm.org/dev/en/latest/framework/resources/). Compare:
