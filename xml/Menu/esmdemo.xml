@@ -24,4 +24,10 @@
     <title>Listing</title>
     <access_arguments>access CiviCRM</access_arguments>
   </item>
+  <item>
+    <path>civicrm/esmdemo/hello-import-map-hook</path>
+    <page_callback>CRM_Esmdemo_Page_ImportMapHook</page_callback>
+    <title>ImportMapHook</title>
+    <access_arguments>access CiviCRM</access_arguments>
+  </item>
 </menu>

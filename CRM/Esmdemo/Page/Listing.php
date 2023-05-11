@@ -8,6 +8,10 @@ class CRM_Esmdemo_Page_Listing extends CRM_Core_Page {
 
     $esmdemos = [
       [
+        'name' => 'Hello World: Import Map (Hook)',
+        'route' => 'civicrm/esmdemo/hello-import-map-hook',
+      ],
+      [
         'name' => 'Hello World: Relative Path',
         'route' => 'civicrm/esmdemo/hello-relpath',
       ],

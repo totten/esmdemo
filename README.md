@@ -63,6 +63,28 @@ We have a few examples of these techniques.
 ## Part 2. Import Map Support
 
 If you want to share modules between different parts of the system (e.g. between `civicrm/js/*` and `my-extension/js/*`), then
-the _basic_ support is not sufficient. You also need to support *logical paths* or *virtual paths* based on an *import map*.
+the _basic_ support is not sufficient. You also need to support *logical paths* based on an *import map*.
 
-__TODO__
+Here is an example:
+
+* __Hello World: Import Map Hook__ (`civicrm/esmdemo/hello-import-map-hook`)
+    * The [module](esmdemo.php) declares that `geolib/` maps to the physical path for `{MY_EXTENSION}/packages/geometry-library-1.2.3/`.
+        ```php
+        function esmdemo_civicrm_esmImportMap(array &$importMap, array $context): void {
+          $importMap['imports']['geolib/'] = E::url('packages/geometry-library-1.2.3/');
+        }
+        ```
+    * The [page-controller](CRM/Esmdemo/Page/RelPath.php) loads the first file:
+        ```php
+        Civi::resources()->addModuleFile(E::LONG_NAME, 'js/hello-import-map-hook.js');
+        ```
+    * [hello-import-map-hook.js](js/hello-import-map-hook.js) imports a file from `geolib/` and uses it:
+        ```js
+        import Square from 'geolib/Square.js';
+        var myShape = new Square(2.5);
+        ```
+    * [Square.js](packages/geometry-library-1.2.3/Square.js) imports more files:
+       ```js
+       import Rectangle from './Rectangle.js';
+       export default class Square extends Rectangle { ... }
+       ```
