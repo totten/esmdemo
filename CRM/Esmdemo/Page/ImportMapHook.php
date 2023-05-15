@@ -8,7 +8,7 @@ class CRM_Esmdemo_Page_ImportMapHook extends CRM_Core_Page {
 
     Civi::resources()->addModuleFile(E::LONG_NAME, 'js/hello-import-map-hook.js');
 
-    CRM_Esmdemo_Sources::show(['CRM/Esmdemo/Page/ImportMapHook.php', 'js/hello-import-map-hook.js', 'js/display-o-tron.js', 'packages/geometry-library-1.2.3./Rectangle.js', 'packages/geometry-library-1.2.3/Square.js']);
+    CRM_Esmdemo_Sources::show(['CRM/Esmdemo/Page/ImportMapHook.php', 'js/hello-import-map-hook.js', 'js/display-o-tron.js', 'packages/geometry-library-1.2.3/Rectangle.js', 'packages/geometry-library-1.2.3/Square.js']);
     parent::run();
   }
 
