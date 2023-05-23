@@ -5,8 +5,9 @@ require_once 'esmdemo.civix.php';
 use CRM_Esmdemo_ExtensionUtil as E;
 // phpcs:enable
 
-function esmdemo_civicrm_esmImportMap(array &$importMap, array $context): void {
-  $importMap['imports']['geolib/'] = E::url('packages/geometry-library-1.2.3/');
+function esmdemo_civicrm_esmImportMap(\Civi\Esm\ImportMap $importMap): void {
+  $importMap->addPrefix('geolib/', E::LONG_NAME, 'packages/geometry-library-1.2.3/');
+  // $importMap['imports']['geolib/'] = E::url('packages/geometry-library-1.2.3/');
 }
 
 /**
