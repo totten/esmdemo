@@ -19,6 +19,12 @@
     <access_arguments>access CiviCRM</access_arguments>
   </item>
   <item>
+    <path>civicrm/esmdemo/hello-preact-npm</path>
+    <page_callback>CRM_Esmdemo_Page_Preact</page_callback>
+    <title>Preact NPM</title>
+    <access_arguments>access CiviCRM</access_arguments>
+  </item>
+  <item>
     <path>civicrm/esmdemo</path>
     <page_callback>CRM_Esmdemo_Page_Listing</page_callback>
     <title>Listing</title>

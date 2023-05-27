@@ -16,11 +16,15 @@ class CRM_Esmdemo_Page_Listing extends CRM_Core_Page {
         'route' => 'civicrm/esmdemo/hello-relpath',
       ],
       [
-        'name' => 'Hello World: VueJS CDN',
+        'name' => 'Hello World: Preact via NPM',
+        'route' => 'civicrm/esmdemo/hello-preact-npm',
+      ],
+      [
+        'name' => 'Hello World: VueJS via CDN',
         'route' => 'civicrm/esmdemo/hello-vuejs-cdn',
       ],
       [
-        'name' => 'Hello World: ReactJS CDN',
+        'name' => 'Hello World: ReactJS via CDN',
         'route' => 'civicrm/esmdemo/hello-reactjs-cdn',
       ],
     ];

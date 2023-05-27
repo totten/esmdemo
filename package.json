@@ -1,0 +1,19 @@
+{
+  "name": "esmdemo",
+  "version": "1.0.0",
+  "description": "This is a CiviCRM extension with some simple examples of loading ECMAScript Modules (ESMs).",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/totten/esmdemo.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/totten/esmdemo/issues"
+  },
+  "homepage": "https://github.com/totten/esmdemo#readme",
+  "dependencies": {
+    "preact": "^10.15.0"
+  }
+}
