@@ -7,9 +7,7 @@ use CRM_Esmdemo_ExtensionUtil as E;
 
 function esmdemo_civicrm_esmImportMap(\Civi\Esm\ImportMap $importMap): void {
   $importMap->addPrefix('geolib/', E::LONG_NAME, 'packages/geometry-library-1.2.3/');
-  // $importMap['imports']['geolib/'] = E::url('packages/geometry-library-1.2.3/');
   $importMap->addPrefix('preact/', E::LONG_NAME, 'node_modules/preact/');
-  // $importMap['imports']['preact'] = 'https://esm.sh/preact';
 }
 
 /**
