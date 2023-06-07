@@ -8,7 +8,14 @@ class CRM_Esmdemo_Sources {
   public static function show(array $files) {
     $fileLinks = array_map(
       function ($file) {
-        return sprintf('<a href="%s" target="_blank">%s</a>', htmlentities(static::VIEWER . $file), htmlentities($file));
+        if (is_string($file)) {
+          return sprintf('<a href="%s" target="_blank">%s</a>', htmlentities(static::VIEWER . $file), htmlentities($file));
+        }
+        elseif (is_array($file)) {
+          foreach ($file as $fileName => $fileUrl) {
+            return sprintf('<a href="%s" target="_blank">%s</a>', htmlentities($fileUrl), htmlentities($fileName));
+          }
+        }
       },
       $files
     );
